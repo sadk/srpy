@@ -1,0 +1,86 @@
+    {{{
+    class PythonEngine
+     |  A class that manages the comunication with a (remote) Python engine,
+     |  variable exchange and code running.
+     |  Note: once initialized the 'ns' object will be created allowing the access
+     |  to the PythonEngine remote namespace.
+     |  Example:
+     |  pyeng.ns.dir()
+     |  pyeng.ns.a=3
+     |  print pyeng.ns.a
+     |  pyeng.imp('math')
+     |  print pyeng.ns.math.sqrt(3)
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(self, uri)
+     |      Connects to a python engine with id 'uri'
+     |      uri -> generated when starting a PythonEngineServer
+     |  
+     |  associateFunction(self, func_name)
+     |      Dynamically generates a new local method that returns the same as
+     |      a Python server function.
+     |      Example:
+     |      pyeng.exe('from math import sqrt')
+     |      sqrt=pyeng.associateFunction('sqrt')
+     |      print sqrt(3)
+     |  
+     |  eval(self, cmd, **vars)
+     |      Evaluates cmd in the Python side and returns its value
+     |      (similar to python's eval)
+     |      cmd -> python expression (string)
+     |      **vars -> any variables that need to be set before evaluating 'cmd'
+     |      
+     |      Example:
+     |      print pyeng.eval("a+b", a=2, b=3)
+     |  
+     |  exe(self, cmd, **vars)
+     |      Executes cmd in the Python side (similar to python's exec)
+     |      cmd -> python expression (string)
+     |      **vars -> any variables that need to be set before executing 'cmd'
+     |      
+     |      Example:
+     |      pyeng.exe('import math; math.sqrt(n)', n=2)
+     |      print pyeng.get('n')
+     |  
+     |  get(self, vars=None)
+     |      Gets variables from the Python side
+     |      vars (if None) -> returns a list of available variable names
+     |      vars (if string) -> returns the variable with the name given
+     |      vars (if list) -> returns a dictionary of variable_names:variable_values
+     |      
+     |      Example:
+     |      a=5
+     |      pyeng.set(a)
+     |      print pyeng.get('a')
+     |  
+     |  imp(self, *modules)
+     |      Imports the given modules remotely
+     |      Example:
+     |      pyeng.imp('math', 'types')
+     |  
+     |  install(self, *modules)
+     |      Install modules in the Python server, will be erased on server shutdown
+     |      modules -> single string or several strings with module names
+     |      Example:
+     |      pyeng.install('mymod1', 'mymod2')
+     |  
+     |  ping(self)
+     |      Pings the Python server
+     |  
+     |  set(self, **vars)
+     |      Creates variables on the Python side
+     |      **vars -> the variables to be transfered
+     |      
+     |      Example:
+     |      a=5; b=3
+     |      pyeng.set(a, b)
+     |      ''
+     |  
+     |  vexe(self, cmd, get=[], **vars)
+     |      Similar to exe method but all variables are runned in a temporary
+     |      independent namespace and will be deleted after execution.
+     |      cmd -> python expression (string)
+     |      get -> a list of variable names to be returned
+     |      **vars -> any variables that need to be set before executing 'cmd'
+}}}
