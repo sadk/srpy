@@ -1,5 +1,4 @@
 #summary Quick Start Guide - Starting the SRPy server and working with the client
-#sidebar TableOfContents
 
 = Introduction =
 
