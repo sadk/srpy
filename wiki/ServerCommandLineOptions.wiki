@@ -1,7 +1,9 @@
 #summary Command line options, srpyapp.py
 
 {{{
-Usage: srpyapp.py --basic/--multi [optional arguments]
+Usage:  
+  srpyapp.py --basic [optional arguments]
+  srpyapp.py --multi [optional arguments]
 
 Options:
 
