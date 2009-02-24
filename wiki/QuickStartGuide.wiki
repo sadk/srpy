@@ -1,8 +1,6 @@
-#Quick Start Guide
+#summary Quick Start Guide - Starting the SRPy server and working with the client
 
 = Introduction =
-
-Add your content here.
 
 == Starting a Server ==
 You can find the *srpyapp.py* script in either the Python scripts folder or in the *srpy* folder. 
