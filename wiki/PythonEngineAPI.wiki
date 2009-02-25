@@ -1,4 +1,4 @@
-#summary PythonEngine Class API documentation
+#summary PythonEngine Class Documentation
 
     {{{
     class PythonEngine
