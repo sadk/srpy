@@ -55,7 +55,7 @@ The special variable *ns* inside the [PythonEngineAPI PythonEngine] allows direc
 }}}
 
 ==== Running Function with Namespace  ====
-All functions used with NameSpace are run remotely on the PythonEngine and results are pulled automatically. Be careful so that the server results are compatible with the client. Here an example using Jython as client and Python with the Numpy package as server:
+All functions from the remote namespace can be run remotely through [PythonEngineAPI PythonEngine], results are pulled automatically. Be careful so that the server results are compatible with the client. Here an example using Jython as client and Python with the Numpy package as server:
 
 {{{
 >>> pyeng.imp('numpy')
