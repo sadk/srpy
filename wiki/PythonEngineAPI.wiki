@@ -1,3 +1,5 @@
+#summary PythonEngine class API documentation
+
     {{{
     class PythonEngine
      |  A class that manages the comunication with a (remote) Python engine,
