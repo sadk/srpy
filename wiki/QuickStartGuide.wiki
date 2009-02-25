@@ -24,7 +24,7 @@ To connect with a client we just need to import the *srpy* library and start the
 >>> pyeng=srpy.PythonEngine("PYRO://157.99.245.20:7767/9d63f5141e70441a42018b6d48c8cc6c")
 }}}
 
-==== Playing with the remote PythonEngine  ====
+==== Playing with the remote Python Engine  ====
 {{{
 >>> pyeng.get()
 ['debug', '__builtins__', 'types']
@@ -41,7 +41,7 @@ To connect with a client we just need to import the *srpy* library and start the
 2.2360679774997898
 }}}
 
-==== Using the NameSpace  ====
+==== Using the Namespace  ====
 The special variable *ns* inside the Python Engine allows direct access to the remote namespace:
 {{{
 >>> pyeng.ns.dir()
@@ -54,7 +54,7 @@ The special variable *ns* inside the Python Engine allows direct access to the r
 'Ricardo'
 }}}
 
-==== Running Function with NameSpace  ====
+==== Running Function with Namespace  ====
 All functions used with NameSpace are run remotely on the PythonEngine and results are pulled automatically. Be careful so that the server results are compatible with the client. Here an example using Jython as client and Python with the Numpy package as server:
 
 {{{
