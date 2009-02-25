@@ -1,4 +1,5 @@
 #summary Quick Start Guide - Starting the SRPy server and working with the client
+#labels Phase-Requirements,Featured
 
 = Introduction =
 
