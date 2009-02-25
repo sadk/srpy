@@ -1,5 +1,5 @@
 #summary Command line options, srpyapp.py
-#labels Featured,Phase-Deploy
+#labels Phase-Deploy
 
 {{{
 Usage:  
