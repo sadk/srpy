@@ -35,7 +35,7 @@
      |      print pyeng.eval("a+b", a=2, b=3)
      |  
      |  exe(self, cmd, **vars)
-     |      Executes cmd in the Python side (similar to python's exec)
+     |      Executes cmd in the Python side (similar to python exec)
      |      cmd -> python expression (string)
      |      **vars -> any variables that need to be set before executing 'cmd'
      |      
