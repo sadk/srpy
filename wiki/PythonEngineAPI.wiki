@@ -27,7 +27,7 @@
      |  
      |  eval(self, cmd, **vars)
      |      Evaluates cmd in the Python side and returns its value
-     |      (similar to python's eval)
+     |      (similar to python eval)
      |      cmd -> python expression (string)
      |      **vars -> any variables that need to be set before evaluating 'cmd'
      |      
