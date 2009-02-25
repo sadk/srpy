@@ -55,7 +55,7 @@ The special variable *ns* inside the [PythonEngineAPI PythonEngine] allows direc
 'Ricardo'
 }}}
 
-==== Running Function with Namespace  ====
+==== Running Function inside the remote Namespace  ====
 All functions from the remote namespace can be run remotely through [PythonEngineAPI PythonEngine], results are pulled automatically. Be careful so that the server results are compatible with the client. Here an example using Jython as client and Python with the Numpy package as server:
 
 {{{
