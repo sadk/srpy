@@ -1,0 +1,17 @@
+#summary How to install SRPy
+
+= Introduction =
+There are two versions of SRPy available:
+  * *srpy-0.1.0.zip*
+  * *srpy-bundled-0.1.0.zip*
+
+While *srpy-0.1.0.zip* expects you to have Pyro and Parallel-Python installed, *srpy-bundled-0.1.0.zip* comes already with these packages inside it and is directly ready to run.
+
+*Note:* If you want to use SRPy under Jython we advise you to get the bundled version. Don't forget that SRPy does not support the server running under Jython at this point.
+
+= Installing from source =
+SRPy works directly from source, just copy the folder *srpy* to your favorite location and import it.
+To start the server do `python path/to/srpyapp.py -b`.
+
+= Installing through setuptools =
+Download your favorite *srpy* version, uncompress it and do `python setup.py install` from inside the uncompressed folder. 
