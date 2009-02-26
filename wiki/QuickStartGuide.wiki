@@ -50,7 +50,6 @@ The special variable *ns* inside the [PythonEngineAPI PythonEngine] allows direc
 >>> pyeng.ns.math.sqrt(5)
 2.2360679774997898
 >>> pyeng.ns.whoami='Ricardo'
-['__args__', '__builtins__', '__kwds__', 'a', 'c', 'debug', 'math', 'types', 'whoami']
 >>> pyeng.ns.whoami
 'Ricardo'
 }}}
