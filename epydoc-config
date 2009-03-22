@@ -1,0 +1,20 @@
+[epydoc]
+
+name: Simple Remote Python
+url: http://code.google.com/p/srpy/
+
+modules: srpy/__init__.py, srpy/srpyclient.py, srpy/srpyinfo.py 
+output: html
+#output: pdf
+target: doc/
+verbosity: 1
+debug: 1
+
+#docformat: reStructuredText
+docformat: epytext
+inheritance: grouped
+private: no
+imports: yes
+
+name: Simple Remote Python
+url: http://code.google.com/p/srpy/

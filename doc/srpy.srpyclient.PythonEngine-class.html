@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>srpy.srpyclient.PythonEngine</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="srpy-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/srpy/">Simple Remote Python</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="srpy-module.html">Package&nbsp;srpy</a> ::
+        <a href="srpy.srpyclient-module.html">Module&nbsp;srpyclient</a> ::
+        Class&nbsp;PythonEngine
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="srpy.srpyclient.PythonEngine-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PythonEngine</h1><p class="nomargin-top"><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine">source&nbsp;code</a></span></p>
+<p>A class that manages the comunication with a (remote) Python engine, 
+  variable exchange and code running.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">uri</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">group</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      Connects to a remote python engine.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">None</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#set" class="summary-sig-name">set</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">**vars</span>)</span><br />
+      Creates variables on the Python side.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.set">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">any</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#get" class="summary-sig-name">get</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">vars</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Gets variables from the Python side.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.get">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">None</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#clear" class="summary-sig-name">clear</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Cleans namespace (deleting variable) on the remote Python side</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.clear">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">any</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#eval" class="summary-sig-name">eval</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cmd</span>,
+        <span class="summary-sig-arg">**vars</span>)</span><br />
+      Evaluates cmd in the Python side and returns its value (similar to 
+      python's eval).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.eval">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">None</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#exe" class="summary-sig-name">exe</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cmd</span>,
+        <span class="summary-sig-arg">**vars</span>)</span><br />
+      Executes cmd in the Python side (similar to python's exec).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.exe">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">dict</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#vexe" class="summary-sig-name">vexe</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cmd</span>,
+        <span class="summary-sig-arg">get</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="summary-sig-arg">**vars</span>)</span><br />
+      Similar to exe method but all variables are runned in a temporary 
+      independent namespace and will be deleted after execution.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.vexe">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">None</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#install" class="summary-sig-name">install</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*modules</span>)</span><br />
+      Install modules in the Python server, will be erased on server 
+      shutdown.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.install">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">None</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#imp" class="summary-sig-name">imp</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*modules</span>)</span><br />
+      Imports the given modules remotely.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.imp">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">any</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#ns" class="summary-sig-name">ns</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      After initialization allows access to the PythonEngine remote 
+      namespace.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.ns">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">function</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#associateFunction" class="summary-sig-name">associateFunction</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">func_name</span>)</span><br />
+      Dynamically generates a new local method that returns the same as a 
+      Python server function.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.associateFunction">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">dict</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#whoami" class="summary-sig-name">whoami</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return information about the remote server.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.whoami">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">str</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getURI"></a><span class="summary-sig-name">getURI</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return PythonEngine URI id.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.getURI">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">str</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getInfoString"></a><span class="summary-sig-name">getInfoString</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return information about remote PythonEngine.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.getInfoString">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">str</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getHostname"></a><span class="summary-sig-name">getHostname</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the hostname or IP of the associated PythonEngine.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.getHostname">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">str</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#getSystem" class="summary-sig-name">getSystem</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the OS system name of the associated PythonEngine.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.getSystem">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">None</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#setGroup" class="summary-sig-name">setGroup</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Updates the group to which the PythonEngine bellongs.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.setGroup">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">str</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getGroup"></a><span class="summary-sig-name">getGroup</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the associated group name.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.getGroup">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="isBusy"></a><span class="summary-sig-name">isBusy</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns true if the PythonEngine is busy (locked)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.isBusy">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">None</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="wait"></a><span class="summary-sig-name">wait</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">timeout</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Waits for PythonEngine to stop being busy</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.wait">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">str</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#ping" class="summary-sig-name">ping</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Pings the Python server.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.ping">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">(float, float, bool)</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="srpy.srpyclient.PythonEngine-class.html#benchmark" class="summary-sig-name">benchmark</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cycles</span>=<span class="summary-sig-default">10</span>)</span><br />
+      Benchmarks remote engine.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.benchmark">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__repr__"></a><span class="summary-sig-name">__repr__</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.__repr__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__str__"></a><span class="summary-sig-name">__str__</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.__str__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">uri</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">group</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Connects to a remote python engine.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>uri</code></strong> (str) - remote PythonEngine identifier</li>
+        <li><strong class="pname"><code>name</code></strong> (str) - reference name for this PythonEngine</li>
+        <li><strong class="pname"><code>group</code></strong> (str) - reference group for this PythonEngine</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">**vars</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.set">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Creates variables on the Python side.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.set(a=5, b=3)
+<span class="py-prompt">&gt;&gt;&gt; </span>c=1
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.set(c=c)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.get([<span class="py-string">'a'</span>, <span class="py-string">'b'</span>, <span class="py-string">'c'</span>])
+<span class="py-output">{'a': 5, 'c': 1, 'b': 3}</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>vars</code></strong> (kwd dict) - the variables to be transfered</li>
+    </ul></dd>
+    <dt>Returns: None</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">vars</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.get">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Gets variables from the Python side.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.set(a=5, b=3, c=1)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.get()
+<span class="py-output">['a', 'c', 'b']</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>pyeng.get([<span class="py-string">'a'</span>, <span class="py-string">'b'</span>])
+<span class="py-output">{'a': 5, 'b': 3}</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>pyeng.get(<span class="py-string">'a'</span>)
+<span class="py-output">5</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>vars</code></strong> (None or str or list) - if None: returns a list of available variable names; if str: 
+          returns the variable with the name given; if list: returns a 
+          dictionary of variable_names:variable_values</li>
+    </ul></dd>
+    <dt>Returns: any</dt>
+        <dd>list of available variable names or variable with the given name 
+          or dictionary of variable_names:variable_values</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="clear"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clear</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.clear">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Cleans namespace (deleting variable) on the remote Python side</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.set(a=1, b=2, c=3) 
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.get()
+<span class="py-output">['a', 'c', 'b']</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>pyeng.py.clear()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.get()
+<span class="py-output">[]</span></pre>
+  <dl class="fields">
+    <dt>Returns: None</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="eval"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">eval</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">cmd</span>,
+        <span class="sig-arg">**vars</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.eval">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Evaluates cmd in the Python side and returns its value (similar to 
+  python's eval).</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.eval(<span class="py-string">&quot;a+b&quot;</span>, a=2, b=3)
+<span class="py-output">5</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>cmd</code></strong> (str) - python expression</li>
+        <li><strong class="pname"><code>vars</code></strong> (kwd dict) - any variables that need to be set before evaluating 'cmd'</li>
+    </ul></dd>
+    <dt>Returns: any</dt>
+        <dd>remote evaluation result</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="exe"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">exe</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">cmd</span>,
+        <span class="sig-arg">**vars</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.exe">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Executes cmd in the Python side (similar to python's exec).</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.exe(<span class="py-string">'import math; n = math.sqrt(n)'</span>, n=2)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> pyeng.get(<span class="py-string">'n'</span>)
+<span class="py-output">1.41421356237</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>cmd</code></strong> (str) - python expression</li>
+        <li><strong class="pname"><code>vars</code></strong> (kwd dict) - any variables that need to be set before evaluating 'cmd'</li>
+    </ul></dd>
+    <dt>Returns: None</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="vexe"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">vexe</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">cmd</span>,
+        <span class="sig-arg">get</span>=<span class="sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="sig-arg">**vars</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.vexe">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Similar to exe method but all variables are runned in a temporary 
+  independent namespace and will be deleted after execution.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.vexe(<span class="py-string">'import math; a=math.sqrt(n); b=a**2'</span>, <span class="py-builtin">get</span>=[<span class="py-string">'a'</span>, <span class="py-string">'b'</span>], n=2)
+<span class="py-output">{'a': 1.4142135623730951, 'b': 2.0000000000000004}</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>cmd</code></strong> (str) - python expression</li>
+        <li><strong class="pname"><code>get</code></strong> (list) - list of variables to retrieve</li>
+        <li><strong class="pname"><code>vars</code></strong> (kwd dict) - any variables that need to be set before evaluating 
+          <code>cmd</code></li>
+    </ul></dd>
+    <dt>Returns: dict</dt>
+        <dd>variables mentioned in <code>get</code></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="install"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">install</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*modules</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.install">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Install modules in the Python server, will be erased on server 
+  shutdown.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.install(<span class="py-string">'srpyinfo'</span>, <span class="py-string">'srpybenchmark'</span>)</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>modules</code></strong> (arg list - str) - single string or several strings with module names</li>
+    </ul></dd>
+    <dt>Returns: None</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="imp"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">imp</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*modules</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.imp">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Imports the given modules remotely.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.imp(<span class="py-string">'math'</span>, <span class="py-string">'types'</span>)</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>modules</code></strong> (arg list - str) - single string or several strings with module names</li>
+    </ul></dd>
+    <dt>Returns: None</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ns"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ns</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.ns">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>After initialization allows access to the PythonEngine remote 
+  namespace.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)    
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.ns.dir()
+<span class="py-output">['__args__', '__builtins__', '__kwds__']</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>pyeng.ns.a=3
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> pyeng.ns.a
+<span class="py-output">3</span>
+<span class="py-output"></span><span class="py-prompt">&gt;&gt;&gt; </span>pyeng.imp(<span class="py-string">'math'</span>)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> pyeng.ns.math.sqrt(3)
+<span class="py-output">1.73205080757</span></pre>
+  <dl class="fields">
+    <dt>Returns: any</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="associateFunction"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">associateFunction</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">func_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.associateFunction">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Dynamically generates a new local method that returns the same as a 
+  Python server function.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.exe(<span class="py-string">'from math import sqrt'</span>)
+<span class="py-prompt">&gt;&gt;&gt; </span>sqrt=pyeng.associateFunction(<span class="py-string">'sqrt'</span>)
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> sqrt(3)
+<span class="py-output">1.73205080757</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>func_name</code></strong> (str) - function name to be associated</li>
+    </ul></dd>
+    <dt>Returns: function</dt>
+        <dd>proxy to remote function</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="whoami"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">whoami</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.whoami">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return information about the remote server.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)
+<span class="py-prompt">&gt;&gt;&gt; </span>info = pyeng.whoami()
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> info.keys()
+<span class="py-output">['PythonEngine ID', 'Python Compiler', 'Machine Architecture',</span>
+<span class="py-output">'Hostname', 'OS System', 'Python Version', 'OS Release',</span>
+<span class="py-output">'Processor Architecture', 'OS Version']</span></pre>
+  <dl class="fields">
+    <dt>Returns: dict</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getSystem"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getSystem</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.getSystem">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the OS system name of the associated PythonEngine.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)        
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.getSystem()</pre>
+  <dl class="fields">
+    <dt>Returns: str</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="setGroup"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setGroup</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.setGroup">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Updates the group to which the PythonEngine bellongs.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (str) - group name</li>
+    </ul></dd>
+    <dt>Returns: None</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ping"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ping</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.ping">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Pings the Python server.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)             
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng.ping()
+<span class="py-output">'pong'</span></pre>
+  <dl class="fields">
+    <dt>Returns: str</dt>
+        <dd>server response, typically 'pong'</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="benchmark"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">benchmark</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">cycles</span>=<span class="sig-default">10</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="srpy.srpyclient-pysrc.html#PythonEngine.benchmark">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Benchmarks remote engine.</p>
+  <p>Example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">import</span> srpy
+<span class="py-prompt">&gt;&gt;&gt; </span>uri, proc = srpy.newSubEngine()
+<span class="py-prompt">&gt;&gt;&gt; </span>pyeng = srpy.PythonEngine(uri)     
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">print</span> pyeng.benchmark()</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>cycles</code></strong> (int) - how many 'sumprimes' cycles should be used, high values means a 
+          bigger time taken by the processor and slower processor benchmark</li>
+    </ul></dd>
+    <dt>Returns: (float, float, bool)</dt>
+        <dd>(network benchmark in sec., processor benchmark in sec., is busy)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="srpy-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/srpy/">Simple Remote Python</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Mar 22 21:34:31 2009
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
