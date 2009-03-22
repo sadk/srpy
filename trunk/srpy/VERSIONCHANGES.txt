@@ -1,6 +1,0 @@
-
-= 0.1.1 =
-  * Fixed a Pyro import error: Successfully imports bundled Pyro if available
-  * srpy and srpy-bundled are now a unified package
-  
-  
