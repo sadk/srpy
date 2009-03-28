@@ -27,4 +27,4 @@ THE POSSIBILITY OF SUCH DAMAGE.
 """
 
 copyright = "Copyright (c) 2009 Ricardo Henriques. All rights reserved"
-version = "0.2.0"
+version = "0.2.2.2"
