@@ -76,6 +76,9 @@ remote python engines.
 
 """
 
+import sys, os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from srpyclient import *
 from srpyapp import newSubEngine, detectNCPUs
 from srpyinfo import version, copyright
+

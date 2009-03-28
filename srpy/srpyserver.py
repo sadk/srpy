@@ -134,7 +134,7 @@ class PythonEngine:
 
 class PythonEngineServer:
 	def __init__(self, urifile=None, *args, **kwds):
-		import Pyro, Pyro.core, atexit
+		import atexit, Pyro.core
 		# Check pyeng is given, if not, start a new one
 		self.pyeng=PythonEngine(*args, **kwds)
 		# Initialize Pyro server
@@ -145,9 +145,7 @@ class PythonEngineServer:
 		self.uri=self.daemon.connect(pyrocom, "PythonEngine")
 		self.pyeng._id_=self.uri.objectID[-10:]
 		if urifile!=None: open(urifile, 'a').write(str(self.uri)+'\n')
-		#print self.uri
 		atexit.register(self.stop)
-		#print Pyro.config.PYRO_CONFIG_FILE
 		
 	def start(self, threaded=False):
 		if not threaded: self.daemon.requestLoop()

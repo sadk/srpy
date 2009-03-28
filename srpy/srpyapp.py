@@ -92,24 +92,30 @@ def shell():
     ##### Start Basic Mode #####
     if options.basic:
         print "Starting Basic Server..."
+        tempdir=tempfile.mkdtemp('PyEngineURI')
+        urifile=os.path.join(tempdir, 'uri.txt')
         PES=srpyserver.PythonEngineServer(urifile=urifile, debug=options.debug)
         PES.start(threaded=True)
         uriinfo=open(urifile).read()
-        print "URI info:"
-        print uriinfo    
     ##### Start Multi-Core Mode #####
     elif options.multi:
+        print "Starting Muti-Core Server..."
         ## Detecting number of cpus ##
         ncpus=options.ncpus
         if ncpus==0: ncpus=detectNCPUs()
         # Prepare to initialize
         procs=[]
-        print "URI info:"
+        uriinfo=""
         for n in range(ncpus):
-            uriinfo, proc = newSubEngine()
+            uriinfo_, proc = newSubEngine()
             procs.append(proc)
-            print uriinfo.replace('\n', '')
-        print
+            uriinfo=uriinfo+uriinfo_
+
+    print "URI info:"
+    print uriinfo
+    
+    if options.urifile!=None:
+        open(options.urifile, 'a').write(uriinfo)
 
     while 1:
         input=raw_input("Write 'quit' or 'exit' to exit...\n")
@@ -130,7 +136,7 @@ def newSubEngine(timeout=30):
     
     command = "\"" + sys.executable + "\" -u \"" \
               + os.path.dirname(os.path.abspath(__file__))\
-              + os.sep + "srpyapp.py\" -b -u %s" % repr(urifile)
+              + os.sep + "srpyapp.py\" -b -u %s" % repr(urifile).replace("'", '"')
     if sys.platform.startswith("win"):
         # workargound for windows
         command = "\"" + command + "\""

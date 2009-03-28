@@ -6,9 +6,7 @@ Ricardo Henriques <[mailto:paxcalpt@gmail.com paxcalpt@gmail.com]>2009 by Ricard
 
 = About =
 
-Simple Remote Python (SRPy) intends to harness the power of the Python by allowing multiple python programs (instances) to seamlessly communicate and share information between each other. As such, each CPU (or core) in each computer can be considered as an individual that can request for other individuals to store information or run processing tasks. In this context, SRPy abstracts itself from the physical boundaries between processors and computers by looking at them simply as volunteer workers that are able to deal with workloads - this workers can even work in a social manner by communicating with each other on a non-centralized way, sharing information and processing requests.
-
-It is a Python/Jython module providing easy access and control of local/remote python instances. It features:
+Simple Remote Python (SRPy) intends to harness the power of the Python by allowing multiple python programs (instances) to seamlessly communicate and share information between each other. As such, each CPU (or core) in each computer can be considered as an individual that can request for other individuals to store information or run processing tasks. In this context, SRPy abstracts itself from the physical boundaries between processors and computers by looking at them simply as volunteer workers that are able to deal with workloads - this workers can even work in a social manner by communicating with each other on a non-centralized way, sharing information and processing requests. It features:
 
   * Remote control of python instances (through Python or Jython)
   * Parallel execution of python code on SMP and clusters
@@ -27,7 +25,7 @@ If you have [http://peak.telecommunity.com/DevCenter/setuptools setuptools]insta
 
 = Dependencies =
 
-The SRPy distribution depends on the [http://pyro.sourceforge.net/ Pyro], it is bundled inside SRPy. It has been tested on Python 2.5 and 2.6.
+The SRPy distribution depends on the [http://pyro.sourceforge.net/ Pyro] library, it is bundled inside SRPy. It has been tested on Python 2.5 and 2.6.
 
 = Acknowledgments =
 
@@ -51,10 +49,12 @@ Many of the ideas inside SRPy have come from this packages, we don't intend to b
 
 = Documentation =
 
-Documentation can be found on the *doc/* directory or can be generated with the [http://epydoc.sourceforge.net/ epydoc] tool by running *epydoc --config=epydoc-config*. Also do *python path/to/srpyapp.py --help*to see the server options.
+Documentation can be found on the *doc/* directory. Also do *python path/to/srpyapp.py --help* to see the server options.
 
 = Changelog =
 
+0.2.2    * Fixed Pyro import bug
+0.2.1    * Fixed bug that didn't allow multi-server start on Windows
 0.2.0    * No longer depends on Parallel-Python
     * Documentation greatly improved and is now included
     * EngBox now acts as a container

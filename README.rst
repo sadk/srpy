@@ -19,9 +19,7 @@ computers by looking at them simply as volunteer workers that are able to
 deal with workloads - this workers can even work in a social manner by
 communicating with each other on a non-centralized way, sharing information
 and processing requests.
-
-It is a Python/Jython module providing easy access and control of local/remote
-python instances. It features:
+It features:
 
     * Remote control of python instances (through Python or Jython)
     * Parallel execution of python code on SMP and clusters
@@ -46,7 +44,7 @@ your favorite location and import it. To start the server do:
 
 Dependencies
 ============
-The SRPy distribution depends on the `Pyro <http://pyro.sourceforge.net/>`_, it is bundled inside SRPy.
+The SRPy distribution depends on the `Pyro <http://pyro.sourceforge.net/>`_ library, it is bundled inside SRPy.
 It has been tested on Python 2.5 and 2.6.
 
 Acknowledgments
@@ -73,13 +71,18 @@ to be the best, just a different flavor that concentrates in bringing:
 
 Documentation
 =============
-Documentation can be found on the *doc/* directory or can be generated with the
-`epydoc <http://epydoc.sourceforge.net/>`_ tool by running
-**epydoc --config=epydoc-config**. Also do **python path/to/srpyapp.py --help**
-to see the server options.
+Documentation can be found on the *doc/* directory. Also do
+**python path/to/srpyapp.py --help** to see the server options.
 
 Changelog
 =========
+
+    * 0.2.2
+        * Fixed Pyro import bug
+    
+    * 0.2.1
+        * Fixed bug that didn't allow multi-server start on Windows
+
     * 0.2.0
         * No longer depends on Parallel-Python
         * Documentation greatly improved and is now included
